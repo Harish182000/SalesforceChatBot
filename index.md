@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-        <title>Salesforce Chatbot</title>
-    </head>
-        <p>Welcome to local host SF Chatbot</p>
-        
+<html>        
     <a id="liveagent_button_online_573D7000000CnmY" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('573D7000000CnmY')"><!-- Online Chat Content --></a><div id="liveagent_button_offline_573D7000000CnmY" style="display: none;"><!-- Offline Chat Content --></div><script type="text/javascript">
     if (!window._laq) { window._laq = []; }
     window._laq.push(function(){liveagent.showWhenOnline('573D7000000CnmY', document.getElementById('liveagent_button_online_573D7000000CnmY'));

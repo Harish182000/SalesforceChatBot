@@ -36,7 +36,7 @@
 
 		embedded_svc.init(
 			"https://harish182000.github.io",
-			"https://harish182000.github.io",
+			"https://pflms--qa.sandbox.my.salesforce-sites.com/partnersite",
 			gslbBaseURL,
 			"00D63000000o0xw",
 			"LLM_Chat_Group",

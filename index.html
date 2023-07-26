@@ -14,21 +14,11 @@
 		outline: 1px solid #005290;
 	}
 
-	/* Styles for mobile devices */
-	@media (max-width: 767px) {
-	  .embeddedServiceHelpButton .helpButton .uiButton {
-	    /* Your custom styles for the minimized widget on mobile */
-		position: fixed;
-                bottom: 20px; /* Adjust this value to set the distance from the bottom */
-                right: 20px; /* Adjust this value to set the distance from the right */
-	  }
-	}
-	
-	/* Styles for tablets and larger screens */
-	@media (min-width: 768px) {
-	  .embeddedServiceHelpButton .helpButton .uiButton {
-	    /* Your custom styles for the minimized widget on tablets and larger screens */
-	  }
+	/* Assuming the class for the minimized state is '.salesforce-live-chat-minimized' */
+	.button.sidebarHeader.minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI {
+		  position: fixed;
+		  bottom: 20px; /* Adjust this value to control the distance from the bottom of the screen */
+		  right: 20px; /* You can also adjust this value to control the distance from the right side of the screen */
 	}
 </style>
 </html>

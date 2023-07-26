@@ -10,6 +10,23 @@
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
 		outline: 1px solid #005290;
 	}
+
+	/* Styles for mobile devices */
+	@media (max-width: 767px) {
+	  .embeddedServiceHelpButton .helpButton .uiButton {
+	    /* Your custom styles for the minimized widget on mobile */
+		position: fixed;
+                bottom: 20px; /* Adjust this value to set the distance from the bottom */
+                right: 20px; /* Adjust this value to set the distance from the right */
+	  }
+	}
+	
+	/* Styles for tablets and larger screens */
+	@media (min-width: 768px) {
+	  .embeddedServiceHelpButton .helpButton .uiButton {
+	    /* Your custom styles for the minimized widget on tablets and larger screens */
+	  }
+	}
 </style>
 </html>
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>

@@ -82,6 +82,18 @@
 		  }],
 		  "entityName":"Contact"
 		}];
+
+		embedded_svc.settings.extraPrechatInfo = [{
+		  "entityFieldMaps": [{
+		    "doCreate":true,
+		    "doFind":true,
+		    "fieldName":"Email",
+		    "isExactMatch":true,
+		    "label":"Email"
+		  }],
+		  "entityName":"ADF_LEAD__c"
+		}];
+		
 		embedded_svc.init(
 			'https://pflms--qa.sandbox.my.salesforce.com',
 			'https://pflms--qa.sandbox.my.salesforce-sites.com/partnersite',

@@ -10,14 +10,16 @@
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
 		outline: 1px solid #005290;
 	}
-
-	/* Media query for responsive design */
 	@media (max-width: 768px) {
-		.chatButtonAssistiveText  {
-			position: fixed;
-			bottom: 20px; /* Adjust this value to control the distance from the bottom of the screen */
-			left: 20px; /* You can also adjust this value to control the distance from the right side of the screen */
-		}
+	  .sidebarHeader {
+	    	position: fixed;
+		bottom: 20px; /* Adjust this value to control the distance from the bottom of the screen */
+		left: 20px; /* You can also adjust this value to control the distance from the right side of the screen */
+	  }
+	
+	  .sidebarHeader:hover {
+	    	background-color: #ddd;
+	  }
 	}
 	
 </style>

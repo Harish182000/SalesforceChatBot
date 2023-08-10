@@ -12,7 +12,7 @@
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
 		outline: 1px solid #00837A;
 	}
-	.embeddedServiceSidebarMinimizedDefaultUI {
+/* 	.embeddedServiceSidebarMinimizedDefaultUI {
 	    /* min-width: 12em; */
 	    /* max-width: 14em; */
 	    width: 100px;
@@ -21,14 +21,8 @@
 	}
 	.embeddedServiceSidebarMinimizedDefaultUI {
 		bottom: 0!important;
-	}
-/* 	@media (max-width: 768px) {
-	  .button.sidebarHeader.minimizedContainer.embeddedServiceSidebarMinimizedDefaultUI {
-	    	position: fixed;
-		bottom: 20px; /* Adjust this value to control the distance from the bottom of the screen */
-		left: 20px; /* You can also adjust this value to control the distance from the right side of the screen */
-	  }
 	} */
+
 </style>
 
 </html>
@@ -46,7 +40,7 @@
 			embedded_svc.settings.displayHelpButton = true; //Or false
 		}
 		else if(mobileCheck() == true){
-			embedded_svc.settings.displayHelpButton = true; //Or false
+			embedded_svc.settings.displayHelpButton = false; //Or false
 		}
 		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
 		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
@@ -113,7 +107,7 @@
 				buttonId: '573D7000000CnmY',
 				baseLiveAgentURL: 'https://d.la3-c1cs-ia6.salesforceliveagent.com/chat',
 				eswLiveAgentDevName: 'LLM_Chat_Group',
-				isOfflineSupportEnabled: true
+				isOfflineSupportEnabled: false
 			}
 		);
 	};

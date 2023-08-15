@@ -22,15 +22,6 @@
 	    right: -2px;
 	    top: 0px;
 	}
-/* 	.embeddedServiceSidebarMinimizedDefaultUI {
-
-	    width: 100px;
-	    height: 100px;
-	    border-radius: 50%;
-	}
-	.embeddedServiceSidebarMinimizedDefaultUI {
-		bottom: 0!important;
-	} */
 
 </style>
 
@@ -73,13 +64,13 @@
 		embedded_svc.settings.extraPrechatInfo = [{
 		  "entityFieldMaps": [{
 		    "doCreate":false,
-		    "doFind":true,
+		    "doFind":false,
 		    "fieldName":"LastName",
 		    "isExactMatch":true,
 		    "label":"Last Name"
 		  }, {
 		    "doCreate":false,
-		    "doFind":true,
+		    "doFind":false,
 		    "fieldName":"FirstName",
 		    "isExactMatch":true,
 		    "label":"First Name"
@@ -92,17 +83,6 @@
 		  }],
 		  "entityName":"Contact"
 		}];
-
-		// embedded_svc.settings.extraPrechatInfo = [{
-		//   "entityFieldMaps": [{
-		//     "doCreate":true,
-		//     "doFind":true,
-		//     "fieldName":"Email",
-		//     "isExactMatch":true,
-		//     "label":"Email"
-		//   }],
-		//   "entityName":"ADF_LEAD__c"
-		// }];
 		
 		embedded_svc.init(
 			'https://pflms--qa.sandbox.my.salesforce.com',

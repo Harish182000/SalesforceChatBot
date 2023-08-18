@@ -34,8 +34,16 @@
 	span#Offline_Chat_Greeting_Text__c-label {
 	    visibility: hidden;
 	}
-	embeddedServiceSidebarFormField .uiInputSelect:after {
+	.embeddedServiceSidebarFormField .uiInputSelect:after {
+	    content: "";
+	    border-right: 6px solid transparent;
+	    border-left: 6px solid transparent;
 	    border-top: 7px solid var(--lwc-colorBorderBrandSecondary,#00837a);
+	    right: 14px;
+	    top: calc(50% + 6px);
+	    padding: 0 0 2px;
+	    position: absolute;
+	    pointer-events: none;
 	    border: hidden;
 	}
 

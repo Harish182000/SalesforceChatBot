@@ -76,15 +76,7 @@
 	};
 	console.log('mobileCheck: '+mobileCheck());
 	var initESW = function(gslbBaseURL) {
-		if(mobileCheck() == false){
-			embedded_svc.settings.displayHelpButton = true; //Or false
-		}
-		else if(mobileCheck() == true){
-			let p = document.querySelector('.embeddedServiceHelpButton .helpButton .uiButton');
-		        p.style.color = 'blue';
-		        p.style.fontWeight = 'bold';
-			embedded_svc.settings.displayHelpButton = true; //Or false
-		}
+		
 		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
 		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
 		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
@@ -142,6 +134,15 @@
 				isOfflineSupportEnabled: true
 			}
 		);
+		if(mobileCheck() == false){
+			embedded_svc.settings.displayHelpButton = true; //Or false
+		}
+		else if(mobileCheck() == true){
+			let p = document.querySelector('.embeddedServiceHelpButton .helpButton .uiButton');
+		        p.style.color = 'blue';
+		        p.style.fontWeight = 'bold';
+			embedded_svc.settings.displayHelpButton = true; //Or false
+		}
 	};
 
 	if (!window.embedded_svc) {

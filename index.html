@@ -138,9 +138,8 @@
 			embedded_svc.settings.displayHelpButton = true; //Or false
 		}
 		else if(mobileCheck() == true){
-			let p = document.querySelector('.embeddedServiceHelpButton .helpButton .uiButton');
-		        p.style.color = 'blue';
-		        p.style.fontWeight = 'bold';
+			let myElement = document.querySelector("#.embeddedServiceHelpButton .helpButton .uiButton");
+			myElement.style.color = 'blue';
 			embedded_svc.settings.displayHelpButton = true; //Or false
 		}
 	};

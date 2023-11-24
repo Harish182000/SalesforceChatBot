@@ -64,6 +64,11 @@
 	    border: hidden;
 	}
 
+	@media (max-width: 600px) {
+		.embeddedServiceHelpButton .helpButton .uiButton {
+			height: 600px;
+		}
+	}
 </style>
 </html>
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
@@ -139,7 +144,6 @@
 		}
 		else if(mobileCheck() == true){
 			embedded_svc.settings.displayHelpButton = true; //Or false
-			document.querySelector('sidebarHeader minimizedContainer helpButton embeddedServiceBottomTabBar embeddedServiceSidebarMinimizedDefaultUI').style.top = '25px';
 		}
 	};
 
